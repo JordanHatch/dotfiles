@@ -1,11 +1,11 @@
 source ~/.aliases
 
-GIT_PROMPT=/usr/share/git-core/git-prompt.sh
-GIT_COMPLETION=/etc/bash_completion.d/git
-if [ -f $GIT_PROMPT ]; then
-  source $GIT_PROMPT
-elif [ -f $GIT_COMPLETION ]; then
-  source $GIT_COMPLETION
+if [ -f /usr/share/git-core/git-prompt.sh ]; then
+  source /usr/share/git-core/git-prompt.sh
+elif [ -f /etc/bash_completion.d/git ]; then
+  source /etc/bash_completion.d/git
+elif [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+  source /usr/local/etc/bash_completion.d/git-prompt.sh
 fi
 
 export PS1='\h:\W$(__git_ps1 " (%s)")\$ '
