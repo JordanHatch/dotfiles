@@ -1,0 +1,7 @@
+alias gso='sudo govuk_select_organisation'
+
+alias ll='ls -l'
+
+alias be='bundle exec'
+alias ber='bundle exec ruby'
+alias bera='bundle exec rake'

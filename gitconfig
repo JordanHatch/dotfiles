@@ -1,0 +1,13 @@
+[user]
+  name = Jordan Hatch
+  email = jordan@jordanh.net
+[core]
+  excludesfile = ~/.gitignore
+[color]
+  branch = auto
+  diff = auto
+  interactive =auto
+  status = auto
+[apply]
+  whitespace = warn
+
