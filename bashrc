@@ -9,6 +9,10 @@ elif [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
 fi
 
 export PS1='\h:\W$(__git_ps1 " (%s)")\$ '
+if [ -f /opt/boxen/env.sh ]; then
+  source /opt/boxen/env.sh
+fi
+
 export govuk_dev_dist='lucid'
 
 export EDITOR='vim'

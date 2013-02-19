@@ -5,7 +5,7 @@
 
 SOURCE		:= $(CURDIR)
 TARGET		:= $(HOME)
-FILES		:= bashrc bash_profile gitconfig gitignore aliases
+FILES		:= bashrc bash_profile gitconfig gitignore aliases profile
 
 UNAME		:= $(shell uname)
 
