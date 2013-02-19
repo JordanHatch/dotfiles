@@ -8,9 +8,14 @@ elif [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
   source /usr/local/etc/bash_completion.d/git-prompt.sh
 fi
 
-export PS1='\h:\W$(__git_ps1 " (%s)")\$ '
 if [ -f /opt/boxen/env.sh ]; then
   source /opt/boxen/env.sh
+fi
+
+if type __git_ps1 &>/dev/null; then
+  export PS1='\h:\W$(__git_ps1 " (%s)")\$ '
+else
+  export PS1='\h:\W\$ '
 fi
 
 export govuk_dev_dist='lucid'
