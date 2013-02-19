@@ -21,4 +21,4 @@ fi
 export govuk_dev_dist='lucid'
 
 export EDITOR='vim'
-export PATH="~/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/local/share/python:/usr/local/heroku/bin:$PATH"
+export PATH="~/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/opt/boxen/homebrew/share/python:/usr/local/share/python:/usr/local/heroku/bin:$PATH"
