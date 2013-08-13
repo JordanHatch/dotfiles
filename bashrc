@@ -1,6 +1,33 @@
 source ~/.aliases
 
 #
+# Add bash_autocompletion for brew
+#
+if type brew &>/dev/null && [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+
+export govuk_dev_dist='lucid'
+
+export EDITOR='vim'
+export PATH="~/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/opt/boxen/homebrew/share/python:/usr/local/share/python:$HOME/.rbenv/bin:/usr/local/heroku/bin:$PATH"
+export GOPATH="${HOME}/dev/go"
+
+#
+# If we have boxen installed, source the Boxen environment
+#
+if [ -f /opt/boxen/env.sh ]; then
+  source /opt/boxen/env.sh
+fi
+
+#
+# If rbenv is installed, enable shims and autocompletion
+#
+if type rbenv &>/dev/null; then
+  eval "$(rbenv init -)"
+fi
+
+#
 # Load __git_ps1 function to add current branch to the PS1
 # This may exist in different places depending on the version
 # of Git installed and the method of which it was installed,
@@ -18,23 +45,4 @@ if type __git_ps1 &>/dev/null; then
   export PS1='\h:\W$(__git_ps1 " (%s)")\$ '
 else
   export PS1='\h:\W\$ '
-fi
-
-export govuk_dev_dist='lucid'
-
-export EDITOR='vim'
-export PATH="~/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/opt/boxen/homebrew/share/python:/usr/local/share/python:$HOME/.rbenv/bin:/usr/local/heroku/bin:$PATH"
-
-#
-# If we have boxen installed, source the Boxen environment
-#
-if [ -f /opt/boxen/env.sh ]; then
-  source /opt/boxen/env.sh
-fi
-
-#
-# If rbenv is installed, enable shims and autocompletion
-#
-if type rbenv &>/dev/null; then
-  eval "$(rbenv init -)"
 fi
