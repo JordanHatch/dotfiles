@@ -6,3 +6,5 @@ alias be='bundle exec'
 alias ber='bundle exec ruby'
 alias bera='bundle exec rake'
 alias bert='bundle exec ruby -I test/'
+
+alias fix_vagrant='sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
