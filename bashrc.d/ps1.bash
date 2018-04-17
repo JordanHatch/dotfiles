@@ -1,15 +1,9 @@
-#
-# Load __git_ps1 function to add current branch to the PS1
-# This may exist in different places depending on the version
-# of Git installed and the method of which it was installed,
-# so fallback to each one in turn.
-#
-if [ -f /usr/share/git-core/git-prompt.sh ]; then
-  source /usr/share/git-core/git-prompt.sh
-elif [ -f /etc/bash_completion.d/git ]; then
-  source /etc/bash_completion.d/git
-elif [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
-  source /usr/local/etc/bash_completion.d/git-prompt.sh
+if [[ -f '/usr/local/etc/bash_completion.d/git-completion.bash' ]]; then
+  source '/usr/local/etc/bash_completion.d/git-completion.bash'
+fi
+
+if [[ -f '/usr/local/etc/bash_completion.d/git-prompt.sh' ]]; then
+  source '/usr/local/etc/bash_completion.d/git-prompt.sh'
 fi
 
 if type __git_ps1 &>/dev/null; then

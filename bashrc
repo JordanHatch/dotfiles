@@ -1,7 +1,7 @@
 source ~/.aliases
 
 export EDITOR='vim'
-export PATH="~/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/opt/boxen/homebrew/share/python:/usr/local/share/python:$HOME/.rbenv/bin:/usr/local/heroku/bin:$PATH"
+export PATH="~/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:$HOME/.rbenv/bin:/usr/local/heroku/bin:$PATH"
 export GOPATH="${HOME}/dev/go"
 
 #
