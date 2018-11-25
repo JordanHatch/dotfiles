@@ -1,0 +1,12 @@
+[submodule "vendor/vim-pathogen"]
+	path = vendor/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "vendor/badwolf"]
+	path = vendor/badwolf
+	url = https://github.com/sjl/badwolf.git
+[submodule "vendor/nerdtree"]
+	path = vendor/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vendor/lightline.vim"]
+	path = vendor/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
