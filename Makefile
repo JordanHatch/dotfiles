@@ -5,7 +5,7 @@
 
 SOURCE		:= $(CURDIR)
 TARGET		:= $(HOME)
-FILES		:= bashrc.d bashrc bash_profile gitconfig gitignore aliases profile vimrc vim
+FILES		:= bashrc.d bashrc bash_profile gitconfig gitignore gvimrc aliases profile vimrc vim
 
 UNAME		:= $(shell uname)
 
