@@ -10,3 +10,6 @@
 [submodule "vendor/lightline.vim"]
 	path = vendor/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
+[submodule "vendor/command-t"]
+	path = vendor/command-t
+	url = https://github.com/wincent/command-t.git
