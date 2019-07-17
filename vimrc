@@ -27,4 +27,3 @@ set laststatus=2
 
 map <C-n> :NERDTreeToggle<CR>
 
-autocmd vimenter * NERDTree
