@@ -5,7 +5,7 @@
 
 SOURCE		:= $(CURDIR)
 TARGET		:= $(HOME)
-FILES		:= bashrc.d bashrc bash_profile gitconfig gitignore gvimrc aliases profile tmux.conf vimrc vim
+FILES		:= bashrc.d bashrc bash_profile gitconfig gitignore gvimrc aliases profile tmux.conf vimrc vim zprofile zshrc
 
 UNAME		:= $(shell uname)
 
@@ -14,7 +14,7 @@ UNAME		:= $(shell uname)
 all: clean install
 
 git_submodule:
-	git submodule update --init
+	git submodule update --init --recursive
 
 install_dotfiles:
 	@for f in $(FILES); do \
@@ -26,6 +26,6 @@ clean_dotfiles:
 		unlink $(TARGET)/.$$f; \
 	done
 
-install: install_dotfiles
+install: git_submodule install_dotfiles
 
 clean: clean_dotfiles

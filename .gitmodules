@@ -13,3 +13,6 @@
 [submodule "vendor/command-t"]
 	path = vendor/command-t
 	url = https://github.com/wincent/command-t.git
+[submodule "vendor/oh-my-zsh"]
+	path = vendor/oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh
