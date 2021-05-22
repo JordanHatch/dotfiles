@@ -30,3 +30,7 @@ Session.vim
 # tags
 # Persistent undo
 [._]*.un~
+
+*.nosync
+
+node_modules
